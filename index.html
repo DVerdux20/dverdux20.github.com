@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Practica con JS</title>
+		<script>
+			function showmessage(){
+				document.getElementById("message").innerHTML="Greetings";
+			}
+			function changecss(){
+				document.getElementById("text").style.color="blue";
+			}
+			function showalert(){
+				alert(document.getElementById("name").value);
+			}
+		</script>
+		<style>
+			h3{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Practica con JS</h1>
+		<hr>
+		<button onclick="showmessage()">Show message</button>
+		<p id="message"></p>
+		<hr>
+		<button onclick="changecss()">Change CSS</button>
+		<h3 id="text">Color change with CSS</h3>
+		<hr>
+		<input type="text" id="name" placeholder="write name">
+		<button onclick="showalert()">Show alert</button>
+	</body>
+</html>
